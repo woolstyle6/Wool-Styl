@@ -7,11 +7,12 @@ const products = [
   {name:"VESTE", price:300, img1:"images/TSS.jpeg", img2:"images/TSS1.jpg"},
   {name:"MONTO", price:900, img1:"images/hwayje.jpeg", img2:"images/ll.jpeg"},
   {name:"MONTO", price:900, img:"images/ff.jpeg"},
-  {name:"CAPE", price:350, img:"images/hh.jpeg"},
+  {name:"CAPE", price:800, img:"images/hh.jpeg"},
   {name:"VESTE D'ENFANT ( 6ANS / 13ANS )", price:300, img:"images/BE.jpeg"},
   {name:"combinaison pour bébé", price:150, img1:"images/bebe.jpeg", img2:"images/salobite.jpeg"},
   {name:"PULL", price:200, img1:"images/soso.jpeg", img2:"images/sisi.jpeg"},
   {name:"CHAUSSETTES DE LAINE", price:50, img1:"images/na.jpeg", img2:"images/no.jpeg"},
+  {name:"CAPE", price:800, img:"images/simomm.jpeg"},
 ];
 
 let cart = [];
@@ -75,5 +76,6 @@ function orderWhatsApp(){
   let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
+
 
 renderProducts();
